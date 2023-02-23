@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-22T22:52:21 CST" name="Default suite" finished-at="2023-02-22T22:52:41 CST" duration-ms="20754">
+    <groups>
+    </groups>
+    <test started-at="2023-02-22T22:52:21 CST" name="Default test" finished-at="2023-02-22T22:52:41 CST" duration-ms="20754">
+      <class name="com.advantage.bsn.Selenium_CreateAccountDD">
+        <test-method is-config="true" signature="SetupEnv(org.testng.ITestContext)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:21 CST" name="SetupEnv" finished-at="2023-02-22T22:52:21 CST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6b474074]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupEnv -->
+        <test-method is-config="true" signature="SetupTestSuite(java.lang.String,java.lang.String)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:21 CST" name="SetupTestSuite" finished-at="2023-02-22T22:52:21 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupTestSuite -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:21 CST" name="setUpClass" finished-at="2023-02-22T22:52:22 CST" duration-ms="1535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testGotoUrl()[pri:5, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:22 CST" name="testGotoUrl" description="Goto URL" finished-at="2023-02-22T22:52:33 CST" duration-ms="10821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGotoUrl -->
+        <test-method signature="testCreateAccount(advantage.model.CreateAccountModel)[pri:10, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:33 CST" name="testCreateAccount" description="Create Account" data-provider="dataTest" finished-at="2023-02-22T22:52:41 CST" duration-ms="8206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[advantage.model.CreateAccountModel@344b8190]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:41 CST" name="tearDown" finished-at="2023-02-22T22:52:41 CST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccountDD@4f6ee6e4]" started-at="2023-02-22T22:52:41 CST" name="afterSuite" finished-at="2023-02-22T22:52:42 CST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.advantage.bsn.Selenium_CreateAccountDD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

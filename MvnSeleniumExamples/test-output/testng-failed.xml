@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.advantage.bsn.Selenium_CreateAccountDD">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="testGotoUrl"/>
+          <include name="testCreateAccount" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="SetupEnv"/>
+          <include name="SetupTestSuite"/>
+        </methods>
+      </class> <!-- com.advantage.bsn.Selenium_CreateAccountDD -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Advantange Shopping Regression Suite"
+parallel="tests" thread-count="2" >
+	<listeners>
+         <listener class-name='listeners.ExtentTestNGIReporterListener'/>
+ 	</listeners>
+	
+	
+  <test verbose="2" name="Smoke - Chrome">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="remotePort" value="4546"></parameter>
+    <classes>
+      <class name="advantageEcommerce.selenium.classic.CreateNewAccount"/>
+      <class name="advantageEcommerce.selenium.classic.AddCartList"/>
+    </classes>
+  </test> <!-- Default test -->
+
+
+  <test verbose="2" name="Smoke - Chrome-2">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="remotePort" value="4546"></parameter>
+    <classes>
+      <class name="advantageEcommerce.selenium.classic.CreateNewAccount"/>
+      <class name="advantageEcommerce.selenium.classic.AddCartList"/>
+    </classes>
+  </test> <!-- Default test -->
+
+
+</suite> <!-- Default suite -->

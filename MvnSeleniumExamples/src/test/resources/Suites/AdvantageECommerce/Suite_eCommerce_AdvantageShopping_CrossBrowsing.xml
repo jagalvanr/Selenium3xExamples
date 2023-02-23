@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Advantange Shopping Regression Suite">
+	<!--   <listeners> <listener class-name='listeners.ExtentTestNGIReporterListener'/> </listeners> -->
+	
+  <test verbose="2" name="Smoke - Chrome 1">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_CreateAccount"/>
+      <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_ChatWithUs"/>
+    </classes>
+  </test> <!-- Default test -->
+
+ <test verbose="2" name="Smoke - Edge 2">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_AddToCarr"/>
+      <class name="advantageEcommerce.tsd.TSD_AdvantageShopping_ContactUs"/>
+
+    </classes>
+  </test> <!-- Default test -->
+  
+</suite> <!-- Default suite -->
