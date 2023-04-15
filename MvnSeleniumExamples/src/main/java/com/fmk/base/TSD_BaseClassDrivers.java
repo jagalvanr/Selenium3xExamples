@@ -14,6 +14,9 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import org.apache.log4j.Logger;
@@ -63,7 +66,7 @@ public class TSD_BaseClassDrivers {
 	    // public  static String strBrowser="chrome";
 	    @Parameters({"browser","remotePort"})    
 	    @BeforeTest(alwaysRun=true)
-	     synchronized protected void SetupTestSuite(@Optional("chrome") String strBrowser ,
+	     synchronized protected void SetupTestSuite(@Optional("") String strBrowser ,
 	    						                    @Optional("4444") String strRemotePort ) {
 	    	String envBrowser    = System.getenv("browserType");
 	    	String envPortRemote = System.getenv("portRemote");
@@ -75,6 +78,7 @@ public class TSD_BaseClassDrivers {
 	    	if (envPortRemote != null) {
 	    		strRemotePort = envPortRemote;
 	    	}
+	    	System.out.println("Current browser = " + currentBrowser);
 	    }
 
 	    private WebDriver setDriverBrowser(String _browser) {
@@ -85,6 +89,23 @@ public class TSD_BaseClassDrivers {
 		  		driver = new ChromeDriver(options);
 		  		return driver;
 			}
+			case "firefox":{
+				String geckoDriverVersion = System.getProperty("geckoDriverVersion");
+				if (geckoDriverVersion != null) {
+					
+				}else {
+					geckoDriverVersion = "0.30.0";
+				}
+				WebDriverManager.firefoxdriver().driverVersion(geckoDriverVersion).setup();
+		  		driver = new FirefoxDriver();
+		  		return driver;
+			}
+			case "edge":{
+		  		WebDriverManager.edgedriver().setup();;
+		  		driver = new EdgeDriver();
+		  		return driver;
+			}
+			
 			default:
 				return null;
 			}
