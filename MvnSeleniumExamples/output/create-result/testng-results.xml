@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Advantange Shopping Regression Suite" duration-ms="785" started-at="2023-04-24T19:19:05Z" finished-at="2023-04-24T19:19:06Z">
+  <suite name="Advantange Shopping Regression Suite" duration-ms="3903" started-at="2023-04-24T22:14:28Z" finished-at="2023-04-24T22:14:32Z">
     <groups>
     </groups>
-    <test name="Smoke - Chrome" duration-ms="785" started-at="2023-04-24T19:19:05Z" finished-at="2023-04-24T19:19:06Z">
+    <test name="Smoke - Chrome" duration-ms="3903" started-at="2023-04-24T22:14:28Z" finished-at="2023-04-24T22:14:32Z">
       <class name="com.advantage.bsn.Selenium_CreateAccount">
-        <test-method status="PASS" signature="SetupEnv(org.testng.ITestContext)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="SetupEnv" is-config="true" duration-ms="14" started-at="2023-04-24T19:19:05Z" finished-at="2023-04-24T19:19:05Z">
+        <test-method status="PASS" signature="SetupEnv(org.testng.ITestContext)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="SetupEnv" is-config="true" duration-ms="15" started-at="2023-04-24T22:14:28Z" finished-at="2023-04-24T22:14:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@31e5415e]]>
+                <![CDATA[org.testng.TestRunner@a2431d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupEnv -->
-        <test-method status="PASS" signature="SetupTestSuite(java.lang.String, java.lang.String)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="SetupTestSuite" is-config="true" duration-ms="3" started-at="2023-04-24T19:19:05Z" finished-at="2023-04-24T19:19:05Z">
+        <test-method status="PASS" signature="SetupTestSuite(java.lang.String, java.lang.String)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="SetupTestSuite" is-config="true" duration-ms="3" started-at="2023-04-24T22:14:28Z" finished-at="2023-04-24T22:14:28Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupTestSuite -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="setUpClass" is-config="true" duration-ms="766" started-at="2023-04-24T19:19:05Z" finished-at="2023-04-24T19:19:06Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="setUpClass" is-config="true" duration-ms="3806" started-at="2023-04-24T22:14:29Z" finished-at="2023-04-24T22:14:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="testGotoUrl()[pri:5, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="testGotoUrl" duration-ms="2" started-at="2023-04-24T19:19:06Z" description="Goto URL" finished-at="2023-04-24T19:19:06Z">
+        <test-method status="FAIL" signature="testGotoUrl()[pri:5, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="testGotoUrl" duration-ms="3" started-at="2023-04-24T22:14:32Z" description="Goto URL" finished-at="2023-04-24T22:14:32Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -77,7 +77,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoUrl -->
-        <test-method status="FAIL" signature="testCreateAccount()[pri:10, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="testCreateAccount" duration-ms="0" started-at="2023-04-24T19:19:06Z" description="Create Account" finished-at="2023-04-24T19:19:06Z">
+        <test-method status="FAIL" signature="testCreateAccount()[pri:10, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="testCreateAccount" duration-ms="0" started-at="2023-04-24T22:14:32Z" description="Create Account" finished-at="2023-04-24T22:14:32Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -113,11 +113,11 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAccount -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-04-24T19:19:06Z" finished-at="2023-04-24T19:19:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-04-24T22:14:32Z" finished-at="2023-04-24T22:14:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="afterSuite" is-config="true" duration-ms="1" started-at="2023-04-24T19:19:06Z" finished-at="2023-04-24T19:19:06Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@3fb6a447]" name="afterSuite" is-config="true" duration-ms="1" started-at="2023-04-24T22:14:33Z" finished-at="2023-04-24T22:14:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

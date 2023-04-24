@@ -18,5 +18,5 @@ ADD ./src/test/resources                           src/test/resources
 ADD ./healthcheck.sh							   healthcheck.sh 
 
 # without healthcheck 
-# ENTRYPOINT java -cp SeleniumFrameworkWeb.jar:SeleniumFrameworkWeb-tests.jar:libs/*  org.testng.TestNG $MODULE 
-ENTRYPOINT sh healthcheck.sh 
+ENTRYPOINT java -cp SeleniumFrameworkWeb.jar:SeleniumFrameworkWeb-tests.jar:libs/*  org.testng.TestNG $MODULE 
+#ENTRYPOINT sh healthcheck.sh 
