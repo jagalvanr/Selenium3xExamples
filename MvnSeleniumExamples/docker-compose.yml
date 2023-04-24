@@ -4,7 +4,7 @@
 version: "3"
 services:
   chrome:
-    image: selenium/node-chrome:4.1.2-20220217
+    image: selenium/node-chrome:4.9.0-20230421
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -16,7 +16,7 @@ services:
       - SE_NODE_MAX_CONCURRENT_SESSIONS=3 
 
   selenium-hub:
-    image: selenium/hub:4.1.2-20220217
+    image: selenium/hub:latest
     container_name: selenium-hub
     environment:
       - SE_NODE_MAX_INSTANCES=3
@@ -32,8 +32,8 @@ services:
       - chrome
     environment:
       - HUB_HOST=selenium-hub
-      - BROWSER=chrome
-      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xmlgi 
+      - BROWSER=firefox
+      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xml
     volumes:
       - ./output/create-result:/usr/share/stkDemo/test-output
       
@@ -45,7 +45,7 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=chrome
-      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_SMKF_Sequential.xml
+      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xml
     volumes:
       - ./output/regression-result:/usr/share/stkDemo/test-output             
       
