@@ -33,7 +33,7 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=chrome
-      - MODULE=src/test/resources/Suites/Suite_eCommerce_AdvantageShopping_CreateAccount.xml
+      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xmlgi 
     volumes:
       - ./output/create-result:/usr/share/stkDemo/test-output
       

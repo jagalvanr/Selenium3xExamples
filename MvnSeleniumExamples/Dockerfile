@@ -11,6 +11,7 @@ WORKDIR /usr/share/stkDemo
 # into this image
 
 ADD ./target/SeleniumFrameworkWeb.jar         SeleniumFrameworkWeb.jar          
+ADD ./target/SeleniumFrameworkWeb-tests.jar   SeleniumFrameworkWeb-tests.jar          
 ADD ./target/libs                                  libs
 #Selenium Resources
 ADD ./src/test/resources                           src/test/resources
