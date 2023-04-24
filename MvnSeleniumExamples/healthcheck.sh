@@ -12,4 +12,4 @@ do
 done
 
 # start the java command
-java -cp SeleniumFrameworkWeb-tests.jar:SeleniumFrameworkWeb.jar:libs/* org.testng.TestNG $MODULE
+java -cp target/SeleniumFrameworkWeb-tests.jar:target/SeleniumFrameworkWeb.jar:target/libs/* org.testng.TestNG $MODULE
