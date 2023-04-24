@@ -12,7 +12,7 @@ WORKDIR /usr/share/stkDemo
 
 ADD ./target/SeleniumFrameworkWeb.jar         SeleniumFrameworkWeb.jar          
 ADD ./target/libs                                  libs
-#Smartkeywords Resources
+#Selenium Resources
 ADD ./src/test/resources                           src/test/resources
 ADD ./healthcheck.sh							   healthcheck.sh 
 
