@@ -30,4 +30,8 @@ Selenium Grid v4 ( with video)
 docker compose -f docker-componse-SeleniumGrid-4.yml up --scale chrome=2
 docker compose -f docker-componse-SeleniumGrid-4.yml down
 
+view video : psw: secret
+
+ #Gitpod
+ gp url 4444
  
