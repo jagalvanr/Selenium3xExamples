@@ -3,6 +3,7 @@ package com.fmk.base;
 import static org.testng.Assert.fail;
 
 import java.net.URL;
+import java.net.InetAddress;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -169,7 +170,11 @@ public class TSD_BaseClassDrivers {
 		  	try {
 		  		if (blnRunRemote) {
 		  			setRemoteCapabilities(currentBrowser);
-					driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);		  			
+					String ip=InetAddress.getLocalHost().getHostAddress();
+					System.out.println("Current Ip:" + ip );
+					String host_hub = System.getenv("HUB_HOST") ;
+					System.out.println("Connecting : " + "http://" + host_hub +":4444/wd/hub");
+					driver = new RemoteWebDriver(new URL("http://" + host_hub +":4444/wd/hub"), capability);		  			
 		  		}else {
 		  			driver = setDriverBrowser(currentBrowser);
 		  		}

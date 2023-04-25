@@ -1,4 +1,4 @@
-ls# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up`
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up`
 # Add the `-d` flag at the end for detached execution
 # To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3.yml down`
 version: "3"
@@ -16,7 +16,7 @@ services:
       - SE_NODE_MAX_CONCURRENT_SESSIONS=3 
 
   selenium-hub:
-    image: selenium/hub:latest
+    image: selenium/hub:4.9.0-20230421
     container_name: selenium-hub
     environment:
       - SE_NODE_MAX_INSTANCES=3
@@ -32,20 +32,8 @@ services:
       - chrome
     environment:
       - HUB_HOST=selenium-hub
-      - BROWSER=firefox
-      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xml
-    volumes:
-      - ./output/create-result:/usr/share/stkDemo/test-output
-      
-# Regression full 
-  regression-module:
-    image: jagalvanr/selenium-docker
-    depends_on:
-      - chrome
-    environment:
-      - HUB_HOST=selenium-hub
       - BROWSER=chrome
       - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xml
     volumes:
-      - ./output/regression-result:/usr/share/stkDemo/test-output             
+      - ./output/create-result:/usr/share/stkDemo/test-output      
       
