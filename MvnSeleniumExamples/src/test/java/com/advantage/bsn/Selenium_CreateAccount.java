@@ -38,6 +38,7 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
   @Test(description="Create Account",priority=10)
   public void testCreateAccount() throws Exception {
 	     SyncPageToLoad();
+	     waitForElementPresent(By.linkText("CREATE NEW ACCOUNT"),30);
 	     element = driver.findElement(By.linkText("CREATE NEW ACCOUNT"));
 	     actions = new Actions(driver);
 	     actions.moveToElement(element).click().build().perform();
