@@ -173,7 +173,7 @@ public class TSD_BaseClassDrivers {
 					String ip=InetAddress.getLocalHost().getHostAddress();
 					System.out.println("Current Ip:" + ip );
 					String host_hub = System.getenv("HUB_HOST") ;
-					if(host_hub.equals(null)){
+					if(host_hub == null){
 						host_hub = "localhost";
 					}
 					System.out.println("Connecting : " + "http://" + host_hub +":4444/wd/hub");

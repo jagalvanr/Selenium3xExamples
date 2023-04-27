@@ -22,7 +22,8 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 	  try {
 		     driver.get(baseUrl);
 		     SyncPageToLoad();
-		    //waitForElement.until(ExpectedConditions.invisibilityOfElementLocated (By.id("menuUser")));
+		     waitForElementPresent(By.id("menuUser"), 30);
+		     //waitForElement.until(ExpectedConditions.invisibilityOfElementLocated (By.id("menuUser")));
 		    //waitForElement.until(ExpectedConditions.elementToBeClickable (By.id("menuUser")));
 		     WebElement element = driver.findElement(By.id("menuUser"));
 		     actions = new Actions(driver);
@@ -40,8 +41,7 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 	     element = driver.findElement(By.linkText("CREATE NEW ACCOUNT"));
 	     actions = new Actions(driver);
 	     actions.moveToElement(element).click().build().perform();
-	     Thread.sleep(3000);
-		waitForElementPresent(By.xpath("//div[@id='formCover']/div/div/sec-view/div"),10);		
+		waitForElementPresent(By.xpath("//div[@id='formCover']/div/div/sec-view/div"),30);		
 		driver.findElement(By.xpath("//div[@id='formCover']/div/div/sec-view/div")).click();
 		driver.findElement(By.xpath("//div[@id='formCover']/div/div/sec-view/div/label")).click();
 		driver.findElement(By.name("usernameRegisterPage")).clear();
@@ -86,5 +86,6 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 	      float float_random=rand.nextFloat();
 	      return int_random;
 	}
+	 
 	 
 }
