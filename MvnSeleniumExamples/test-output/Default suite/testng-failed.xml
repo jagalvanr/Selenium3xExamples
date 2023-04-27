@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.advantage.bsn.Selenium_CreateAccountDD">
+      <class name="com.advantage.bsn.Selenium_CreateAccount">
         <methods>
           <include name="afterSuite"/>
-          <include name="testGotoUrl"/>
-          <include name="testCreateAccount" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUpClass"/>
+          <include name="testGotoUrl"/>
+          <include name="testCreateAccount"/>
           <include name="SetupEnv"/>
           <include name="SetupTestSuite"/>
         </methods>
-      </class> <!-- com.advantage.bsn.Selenium_CreateAccountDD -->
+      </class> <!-- com.advantage.bsn.Selenium_CreateAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

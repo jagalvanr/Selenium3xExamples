@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Advantange Shopping Regression Suite"
-parallel="tests" thread-count="2" >
+<suite guice-stage="DEVELOPMENT" name="Advantange Shopping Regression Suite" >
 	<listeners>
          <listener class-name='listeners.ExtentTestNGIReporterListener'/>
  	</listeners>
@@ -9,22 +8,25 @@ parallel="tests" thread-count="2" >
 	
   <test verbose="2" name="Smoke - Chrome">
     <parameter name="browser" value="chrome"></parameter>
-    <parameter name="remotePort" value="4546"></parameter>
+    <parameter name="remotePort" value="4444"></parameter>
     <classes>
-      <class name="advantageEcommerce.selenium.classic.CreateNewAccount"/>
-      <class name="advantageEcommerce.selenium.classic.AddCartList"/>
+    	<class name="com.advantage.bsn.Selenium_CreateAccount"/>
+      	<class name="com.advantage.bsn.Selenium_ContactUs"/>
+      	<class name="com.advantage.bsn.Selenium_ChatWithUs"/>
     </classes>
   </test> <!-- Default test -->
 
 
   <test verbose="2" name="Smoke - Chrome-2">
     <parameter name="browser" value="chrome"></parameter>
-    <parameter name="remotePort" value="4546"></parameter>
+    <parameter name="remotePort" value="4444"></parameter>
     <classes>
-      <class name="advantageEcommerce.selenium.classic.CreateNewAccount"/>
-      <class name="advantageEcommerce.selenium.classic.AddCartList"/>
+    	<class name="com.advantage.bsn.Selenium_CreateAccount"/>
+      	<class name="com.advantage.bsn.Selenium_ContactUs"/>
+      	<class name="com.advantage.bsn.Selenium_ChatWithUs"/>
     </classes>
   </test> <!-- Default test -->
 
-
 </suite> <!-- Default suite -->
+
+

@@ -9,10 +9,10 @@
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="remotePort" value="4444"></parameter>
     <classes>
-      <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_CreateAccount"/>
-      <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_AddToCarr"/>
-      <class name="advantageEcommerce.tsd.TSD_AdvantageShopping_ContactUs"/>
-      <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_ChatWithUs"/>
+       	<class name="com.advantage.bsn.Selenium_CreateAccount"/>
+      	<class name="com.advantage.bsn.Selenium_ContactUs"/>
+      	<class name="com.advantage.bsn.Selenium_ChatWithUs"/>
+
     </classes>
   </test> <!-- Default test -->
 

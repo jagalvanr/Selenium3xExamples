@@ -160,6 +160,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Advantange Shopping Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.fmk.listeners.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Smoke - Chrome&quot; verbose=&quot;2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;remotePort&quot; value=&quot;4444&quot;/&gt;
@@ -208,11 +211,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCreateAccount')
 data.setCell(0, 2, 'com.advantage.bsn.Selenium_CreateAccount')
-data.setCell(0, 3, 6358);
+data.setCell(0, 3, 6401);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testGotoUrl')
 data.setCell(1, 2, 'com.advantage.bsn.Selenium_CreateAccount')
-data.setCell(1, 3, 4900);
+data.setCell(1, 3, 4874);
 window.suiteTableData['Advantange_Shopping_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Advantange_Shopping_Regression_Suite'}
 return data;
 }
@@ -245,7 +248,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.advantage.bsn.Selenium_CreateAccount</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">SetupEnv(org.testng.TestRunner@7c974942)</span>
+                <span class="method-name">SetupEnv(org.testng.TestRunner@247667dd)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
@@ -254,23 +257,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testGotoUrl</span>
-                <span class="method-start">13918 ms</span>
+                <span class="method-start">6280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateAccount</span>
-                <span class="method-start">18828 ms</span>
+                <span class="method-start">11163 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25191 ms</span>
+                <span class="method-start">17567 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">25648 ms</span>
+                <span class="method-start">18121 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

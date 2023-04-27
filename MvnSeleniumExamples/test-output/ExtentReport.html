@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 24, 2023 06:00:02 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 27, 2023 12:40:10 AM</span>
 				</a>
 			</li>
 			<li>
@@ -71,7 +71,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -155,17 +155,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>testGotoUrl</span>
-						<span class='test-time'>Feb 24, 2023 06:00:02 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>testCreateAccount</span>
+						<span class='test-time'>Apr 27, 2023 12:40:02 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 24, 2023 06:00:02 PM</span>
-	<span class='label end-time'>Feb 24, 2023 06:00:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+174ms</span>
+	<span class='label start-time'>Apr 27, 2023 12:40:02 AM</span>
+	<span class='label end-time'>Apr 27, 2023 12:40:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+754ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -177,37 +177,29 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:00:02 PM</td>
-					<td class='step-details'><span class='label white-text red'>testGotoUrl Test case FAILED due to below issues: null</span></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:00:02 PM</td>
-					<td class='step-details'>Snapshot below: com.aventstack.extentreports.ExtentTest@34523d46</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:40:10 AM</td>
+					<td class='step-details'><span class='label white-text green'>testCreateAccount Test Case PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/workspace/Selenium3xExamples/MvnSeleniumExamples/errorScreenshots/testGotoUrl-[].png' width='10%' src='/workspace/Selenium3xExamples/MvnSeleniumExamples/errorScreenshots/testGotoUrl-[].png' data-src='/workspace/Selenium3xExamples/MvnSeleniumExamples/errorScreenshots/testGotoUrl-[].png'></li>
-							</ul>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>testCreateAccount</span>
-						<span class='test-time'>Feb 24, 2023 06:00:02 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>testGotoUrl</span>
+						<span class='test-time'>Apr 27, 2023 12:39:57 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 24, 2023 06:00:02 PM</span>
-	<span class='label end-time'>Feb 24, 2023 06:00:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+171ms</span>
+	<span class='label start-time'>Apr 27, 2023 12:39:57 AM</span>
+	<span class='label end-time'>Apr 27, 2023 12:40:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+645ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -219,22 +211,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:00:02 PM</td>
-					<td class='step-details'><span class='label white-text red'>testCreateAccount Test case FAILED due to below issues: null</span></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:00:02 PM</td>
-					<td class='step-details'>Snapshot below: com.aventstack.extentreports.ExtentTest@7cedfa63</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:40:10 AM</td>
+					<td class='step-details'><span class='label white-text green'>testGotoUrl Test Case PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/workspace/Selenium3xExamples/MvnSeleniumExamples/errorScreenshots/testCreateAccount-[].png' width='10%' src='/workspace/Selenium3xExamples/MvnSeleniumExamples/errorScreenshots/testCreateAccount-[].png' data-src='/workspace/Selenium3xExamples/MvnSeleniumExamples/errorScreenshots/testCreateAccount-[].png'></li>
-							</ul>
 					</div>
 				</li>
 			</ul>
@@ -278,25 +262,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 24, 2023 06:00:02 PM</div>
+					<div class='panel-lead'>Apr 27, 2023 12:40:10 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 24, 2023 06:00:02 PM</div>
+			 		<div class='panel-lead'>Apr 27, 2023 12:40:10 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>63ms</div>
+					<div class='panel-lead'>200ms</div>
 				</div>
 			</div>
 		</div>
@@ -309,22 +293,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 2,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 4,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 4,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

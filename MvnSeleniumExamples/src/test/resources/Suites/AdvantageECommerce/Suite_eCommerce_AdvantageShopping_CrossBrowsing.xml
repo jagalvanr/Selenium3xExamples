@@ -12,7 +12,7 @@
   </test> <!-- Default test -->
 
  <test verbose="2" name="Smoke - Edge 2">
-    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="advantageEcommerce.tsd.TSD_AdvantageShooping_AddToCarr"/>
       <class name="advantageEcommerce.tsd.TSD_AdvantageShopping_ContactUs"/>

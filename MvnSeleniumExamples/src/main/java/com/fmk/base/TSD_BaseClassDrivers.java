@@ -45,6 +45,7 @@ public class TSD_BaseClassDrivers {
 	  public JavascriptExecutor js;
 	  public Map<String, Object> vars;
 	  public WebDriverWait waitForElement;
+	  String host_hub = "127.0.0.1" ;
 //    Reporting 
 	    String log4jConfPath = "log4j.properties";     
 	    Logger logger = Logger.getLogger(TSD_BaseClassDrivers.class);     
@@ -56,8 +57,9 @@ public class TSD_BaseClassDrivers {
 //
 		public String strSuiteName ;
 		public String strTestNameXml;
-		public String currentBrowser;
-		public boolean blnRunRemote = false;
+		
+		public static String currentBrowser;
+		public static boolean blnRunRemote = false;
 //
 	  @BeforeSuite(alwaysRun=true)
 	    synchronized public void SetupEnv(ITestContext ctx ) {
@@ -72,7 +74,7 @@ public class TSD_BaseClassDrivers {
 	    // public  static String strBrowser="chrome";
 	    @Parameters({"browser","remotePort"})    
 	    @BeforeTest(alwaysRun=true)
-	     synchronized protected void SetupTestSuite(@Optional("") String strBrowser ,
+	     synchronized protected void SetupTestSuite(@Optional("chrome") String strBrowser ,
 	    						                    @Optional("") String strRemotePort ) {
 	    	String envBrowser    = System.getenv("browserType");
 	    	String envPortRemote = System.getenv("portRemote");
@@ -172,9 +174,8 @@ public class TSD_BaseClassDrivers {
 		  			setRemoteCapabilities(currentBrowser);
 					String ip=InetAddress.getLocalHost().getHostAddress();
 					System.out.println("Current Ip:" + ip );
-					String host_hub = System.getenv("HUB_HOST") ;
-					if(host_hub == null){
-						host_hub = "localhost";
+					if (System.getenv("HUB_HOST") != null) {
+						host_hub = System.getenv("HUB_HOST") ;	
 					}
 					System.out.println("Connecting : " + "http://" + host_hub +":4444/wd/hub");
 					driver = new RemoteWebDriver(new URL("http://" + host_hub +":4444/wd/hub"), capability);		  			
