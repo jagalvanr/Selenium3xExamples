@@ -1,60 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-27T00:39:51 CDT" name="Advantange Shopping Regression Suite" finished-at="2023-04-27T00:40:09 CDT" duration-ms="17991">
+  <suite started-at="2023-04-27T15:53:06 CDT" name="Default suite" finished-at="2023-04-27T15:53:06 CDT" duration-ms="105">
     <groups>
     </groups>
-    <test started-at="2023-04-27T00:39:51 CDT" name="Smoke - Chrome" finished-at="2023-04-27T00:40:09 CDT" duration-ms="17991">
-      <class name="com.advantage.bsn.Selenium_CreateAccount">
-        <test-method is-config="true" signature="SetupEnv(org.testng.ITestContext)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:39:51 CDT" name="SetupEnv" finished-at="2023-04-27T00:39:51 CDT" duration-ms="17" status="PASS">
+    <test started-at="2023-04-27T15:53:06 CDT" name="Default test" finished-at="2023-04-27T15:53:06 CDT" duration-ms="105">
+      <class name="com.poc.selenium.DataProviderCSV_Example">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.poc.selenium.DataProviderCSV_Example@1cbb87f3]" started-at="2023-04-27T15:53:06 CDT" name="testLogin" data-provider="loginData" finished-at="2023-04-27T15:53:06 CDT" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@247667dd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetupEnv -->
-        <test-method is-config="true" signature="SetupTestSuite(java.lang.String,java.lang.String)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:39:51 CDT" name="SetupTestSuite" finished-at="2023-04-27T00:39:51 CDT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
+                <![CDATA[﻿user]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[4444]]>
+                <![CDATA[password]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetupTestSuite -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:39:51 CDT" name="setUpClass" finished-at="2023-04-27T00:39:57 CDT" duration-ms="6213" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.poc.selenium.DataProviderCSV_Example@1cbb87f3]" started-at="2023-04-27T15:53:06 CDT" name="testLogin" data-provider="loginData" finished-at="2023-04-27T15:53:06 CDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jose.tester]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S0f773k.001]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="testGotoUrl()[pri:5, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:39:57 CDT" name="testGotoUrl" description="Goto URL" finished-at="2023-04-27T00:40:02 CDT" duration-ms="4874" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.poc.selenium.DataProviderCSV_Example@1cbb87f3]" started-at="2023-04-27T15:53:06 CDT" name="testLogin" data-provider="loginData" finished-at="2023-04-27T15:53:06 CDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S0f773k.001]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGotoUrl -->
-        <test-method signature="testCreateAccount()[pri:10, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:40:02 CDT" name="testCreateAccount" description="Create Account" finished-at="2023-04-27T00:40:08 CDT" duration-ms="6401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:40:08 CDT" name="tearDown" finished-at="2023-04-27T00:40:09 CDT" duration-ms="443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@6bd61f98]" started-at="2023-04-27T00:40:09 CDT" name="afterSuite" finished-at="2023-04-27T00:40:10 CDT" duration-ms="1458" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.advantage.bsn.Selenium_CreateAccount -->
-    </test> <!-- Smoke - Chrome -->
-  </suite> <!-- Advantange Shopping Regression Suite -->
+        </test-method> <!-- testLogin -->
+      </class> <!-- com.poc.selenium.DataProviderCSV_Example -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
