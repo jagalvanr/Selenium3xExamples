@@ -1,0 +1,11 @@
+# docker build -t my-http-server . 
+FROM node:latest
+
+WORKDIR /app
+COPY . .
+
+RUN npm install -g http-server
+
+CMD ["http-server", "-a", "127.0.0.1", "-p", "8008", "--cors"]
+
+EXPOSE 8008
