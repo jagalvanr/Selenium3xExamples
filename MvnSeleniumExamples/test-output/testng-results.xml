@@ -1,61 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-27T15:53:06 CDT" name="Default suite" finished-at="2023-04-27T15:53:06 CDT" duration-ms="105">
+  <suite started-at="2023-05-17T17:36:25 CDT" name="Advantange Shopping Regression Suite" finished-at="2023-05-17T17:36:26 CDT" duration-ms="637">
     <groups>
     </groups>
-    <test started-at="2023-04-27T15:53:06 CDT" name="Default test" finished-at="2023-04-27T15:53:06 CDT" duration-ms="105">
-      <class name="com.poc.selenium.DataProviderCSV_Example">
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.poc.selenium.DataProviderCSV_Example@1cbb87f3]" started-at="2023-04-27T15:53:06 CDT" name="testLogin" data-provider="loginData" finished-at="2023-04-27T15:53:06 CDT" duration-ms="12" status="PASS">
+    <test started-at="2023-05-17T17:36:25 CDT" name="Smoke - MySQL" finished-at="2023-05-17T17:36:26 CDT" duration-ms="637">
+      <class name="com.db.mysql.ConnectionManager_MySql">
+        <test-method is-config="true" signature="setupConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.db.mysql.ConnectionManager_MySql@4d0f2471]" started-at="2023-05-17T17:36:25 CDT" name="setupConnection" finished-at="2023-05-17T17:36:26 CDT" duration-ms="552" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[﻿user]]>
+                <![CDATA[localhost]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password]]>
+                <![CDATA[3306]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[maldonado_fox_03]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[root]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[we238185$MSL]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[select usuario,nombre from usuarios;]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.poc.selenium.DataProviderCSV_Example@1cbb87f3]" started-at="2023-04-27T15:53:06 CDT" name="testLogin" data-provider="loginData" finished-at="2023-04-27T15:53:06 CDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jose.tester]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[S0f773k.001]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setupConnection -->
+        <test-method signature="login()[pri:0, instance:com.db.mysql.ConnectionManager_MySql@4d0f2471]" started-at="2023-05-17T17:36:26 CDT" name="login" finished-at="2023-05-17T17:36:26 CDT" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.poc.selenium.DataProviderCSV_Example@1cbb87f3]" started-at="2023-04-27T15:53:06 CDT" name="testLogin" data-provider="loginData" finished-at="2023-04-27T15:53:06 CDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tester2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[S0f773k.001]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- com.poc.selenium.DataProviderCSV_Example -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+      </class> <!-- com.db.mysql.ConnectionManager_MySql -->
+    </test> <!-- Smoke - MySQL -->
+  </suite> <!-- Advantange Shopping Regression Suite -->
 </testng-results>

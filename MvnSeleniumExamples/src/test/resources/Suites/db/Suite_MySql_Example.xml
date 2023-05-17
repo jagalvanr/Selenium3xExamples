@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Advantange Shopping Regression Suite">
+	<listeners>
+         <listener class-name='com.fmk.listeners.ExtentTestNGIReporterListener'/>
+ 	</listeners>
+	
+  <test verbose="2" name="Smoke - MySQL">
+    <parameter name="hostname" value="localhost"></parameter>
+    <parameter name="port" value="3306"></parameter>
+    <parameter name="database" value="maldonado_fox_03"></parameter>
+    <parameter name="userdb" value="root"></parameter>
+    <parameter name="password" value="we238185$MSL"></parameter>
+    <parameter name="query" value="select usuario,nombre from usuarios;"></parameter>
+    <classes>
+	  <class name="com.db.mysql.ConnectionManager_MySql"/>      
+    </classes>
+  </test> <!-- Default test -->
+
+</suite> <!-- Default suite -->
