@@ -1,17 +1,29 @@
 package com.advantage.bsn;
 
+import java.util.Iterator;
 import java.util.Random;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.fmk.base.TSD_BaseClassDrivers;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-
+/***
+ * 
+ * @author jose.galvan
+ * references: 
+ * 	https://groups.google.com/g/selenium-users/c/Y08WMiT5Meo?pli=1
+*  	https://github.com/sahajamit/chrome-devtools-webdriver-integration/tree/master
+ 
+ */
 public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 
     Actions actions = null;
@@ -22,6 +34,9 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 	  try {
 		     driver.get(baseUrl);
 		     SyncPageToLoad();
+//
+		     getLogEntries();
+//		     
 		     waitForElementPresent(By.id("menuUser"), 30);
 		     //waitForElement.until(ExpectedConditions.invisibilityOfElementLocated (By.id("menuUser")));
 		    //waitForElement.until(ExpectedConditions.elementToBeClickable (By.id("menuUser")));
@@ -35,6 +50,53 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 	  }
   }
 
+   public void getLogEntries() {
+	   try {
+           String currentURL = driver.getCurrentUrl();
+           LogEntries logs = driver.manage().logs().get("performance");
+           int status = -1;
+           System.out.println("\\nList of log entries:\\n");
+           for (Iterator<LogEntry> it = logs.iterator(); it.hasNext();) {
+               LogEntry entry = it.next();
+               try {
+                   JSONObject json = new JSONObject(entry.getMessage());
+
+                   // System json messenger 
+                   System.out.println(json.toString());
+                   JSONObject message = json.getJSONObject("message");
+                   String method = message.getString("method");
+
+                   if (method != null && "Network.responseReceived".equals(method)) {
+                       JSONObject params = message.getJSONObject("params");
+                       JSONObject response = params.getJSONObject("response");
+                       String messageUrl = response.getString("url");
+                       if (currentURL.equals(messageUrl)) {
+
+                           status = response.getInt("status");
+
+                           System.out.println("---------- !!!!!!!!!!!!!! returned response for " + messageUrl
+                                   + ": " + status);
+
+                           System.out.println("=======================================================");
+                           System.out.println("=======================================================");
+                           System.out.println("=======================================================");
+                           System.out.println("---------- bingo !!!!!!!!!!!!!! headers: " + response.get("headers"));
+                       }
+                   }
+               } catch (JSONException e) {
+                   // TODO Auto-generated catch block
+                   e.printStackTrace();
+               }
+           }
+           System.out.println("\nstatus code: " + status);
+       } finally {
+
+           if (driver != null) {
+               System.out.println("stop ");
+           }
+       }   
+   }
+   
   @Test(description="Create Account",priority=10)
   public void testCreateAccount() throws Exception {
 	     SyncPageToLoad();

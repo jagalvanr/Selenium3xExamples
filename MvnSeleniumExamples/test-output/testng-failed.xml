@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Advantange Shopping Regression Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.fmk.listeners.ExtentTestNGIReporterListener"/>
-  </listeners>
-  <test thread-count="5" name="Smoke - MySQL(failed)">
-    <parameter name="hostname" value="localhost"/>
-    <parameter name="database" value="maldonado_fox_03"/>
-    <parameter name="userdb" value="root"/>
-    <parameter name="password" value="we238185$MSL"/>
-    <parameter name="port" value="3306"/>
-    <parameter name="query" value="select usuario,nombre from usuarios;"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.db.mysql.ConnectionManager_MySql">
+      <class name="com.devtools.DemoTests">
         <methods>
-          <include name="login"/>
-          <include name="setupConnection"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="dockerTest"/>
         </methods>
-      </class> <!-- com.db.mysql.ConnectionManager_MySql -->
+      </class> <!-- com.devtools.DemoTests -->
     </classes>
-  </test> <!-- Smoke - MySQL(failed) -->
-</suite> <!-- Failed suite [Advantange Shopping Regression Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

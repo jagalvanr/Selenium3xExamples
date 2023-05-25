@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.db.mysql.ConnectionManager_MySql">
+      <class name="com.devtools.DemoTests">
         <methods>
-          <include name="login"/>
-          <include name="setupConnection"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="dockerTest"/>
         </methods>
-      </class> <!-- com.db.mysql.ConnectionManager_MySql -->
+      </class> <!-- com.devtools.DemoTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

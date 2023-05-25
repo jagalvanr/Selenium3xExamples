@@ -7,6 +7,7 @@ import java.net.InetAddress;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -20,6 +21,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -97,6 +100,13 @@ public class TSD_BaseClassDrivers {
 			case "chrome":{
 		  		WebDriverManager.chromedriver().setup();
 		  		ChromeOptions options = new ChromeOptions();
+// Capabilities		  		
+		  		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		  		 cap.setCapability(ChromeOptions.CAPABILITY, options);
+		  		LoggingPreferences logPrefs = new LoggingPreferences();
+		  		logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
+		  		options.setCapability("goog:loggingPrefs", logPrefs);
+//		  		
 		  		driver = new ChromeDriver(options);
 		  		return driver;
 			}
