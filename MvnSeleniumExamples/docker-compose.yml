@@ -28,13 +28,13 @@ services:
       - "4444:4444"
       
   createAccount-module:
-    image: jagalvanr/selenium-docker
+    image: selenium-docker
     depends_on:
       - chrome
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=chrome
-      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping_CreateAccount.xml
+      - MODULE=src/test/resources/Suites/AdvantageECommerce/Suite_eCommerce_AdvantageShopping.xml
     volumes:
       - ./output/create-result:/usr/share/stkDemo/test-output      
       
