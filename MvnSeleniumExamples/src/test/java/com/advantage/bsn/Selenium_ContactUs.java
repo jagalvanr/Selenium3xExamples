@@ -31,8 +31,8 @@ public class Selenium_ContactUs extends TSD_BaseClassDrivers  {
 		    driver.findElement(By.name("subjectTextareaContactUs")).click();
 		    driver.findElement(By.name("subjectTextareaContactUs")).clear();
 		    driver.findElement(By.name("subjectTextareaContactUs")).sendKeys("Help me Oviwan Kenobi");
-		    driver.findElement(By.id("send_btnundefined")).click();
-		    driver.findElement(By.xpath("//div[@id='registerSuccessCover']/div/p")).click();
+		    driver.findElement(By.id("send_btn")).click();
+		    //driver.findElement(By.xpath("//div[@id='registerSuccessCover']/div/p")).click();
 		    SyncPageToLoad();
 		    assertEquals(driver.findElement(By.xpath("//div[@id='registerSuccessCover']/div/p")).getText(), "Thank you for contacting Advantage support.");
 		    driver.findElement(By.linkText("CONTINUE SHOPPING")).click();

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.devtools.DemoTests">
+      <class name="com.advantage.bsn.Selenium_CreateAccountDD">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="dockerTest"/>
+          <include name="afterSuite"/>
+          <include name="testCreateAccount" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="SetupEnv"/>
+          <include name="SetupTestSuite"/>
         </methods>
-      </class> <!-- com.devtools.DemoTests -->
+      </class> <!-- com.advantage.bsn.Selenium_CreateAccountDD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

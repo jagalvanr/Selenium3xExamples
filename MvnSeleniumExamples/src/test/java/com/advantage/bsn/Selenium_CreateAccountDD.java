@@ -92,7 +92,7 @@ public class Selenium_CreateAccountDD extends TSD_BaseClassDrivers {
 		driver.findElement(By.name("postal_codeRegisterPage")).clear();
 		driver.findElement(By.name("postal_codeRegisterPage")).sendKeys(zipCode);
 		driver.findElement(By.name("i_agree")).click();
-		driver.findElement(By.id("register_btnundefined")).click();
+		driver.findElement(By.id("register_btn")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.id("menuUser")).click();
 		driver.findElement(By.xpath("//div[@id='loginMiniTitle']/label[3]")).click();

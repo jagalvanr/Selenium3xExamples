@@ -188,7 +188,7 @@ public class TSD_BaseClassDrivers {
 						host_hub = System.getenv("HUB_HOST") ;	
 					}
 					System.out.println("Connecting : " + "http://" + host_hub +":4444/wd/hub");
-					driver = new RemoteWebDriver(new URL("http://" + host_hub +":4444/wd/hub"), capability);		  			
+					driver = new RemoteWebDriver(new URL("http://" + host_hub +":4444/wd/hub"), capability);
 		  		}else {
 		  			driver = setDriverBrowser(currentBrowser);
 		  		}
@@ -197,6 +197,7 @@ public class TSD_BaseClassDrivers {
 				vars = new HashMap<String, Object>();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				waitForElement = new WebDriverWait(driver,30);
+				driver.manage().window().maximize();
 				//this.currentBrowser = core.currentBrowser;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

@@ -1,87 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="0" failed="1" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-18T00:42:05 CDT" name="Default suite" finished-at="2023-05-18T00:42:12 CDT" duration-ms="6265">
+  <suite started-at="2024-02-21T23:57:54 CST" name="Advantange Shopping Regression Suite" finished-at="2024-02-21T23:59:07 CST" duration-ms="72344">
     <groups>
     </groups>
-    <test started-at="2023-05-18T00:42:05 CDT" name="Default test" finished-at="2023-05-18T00:42:12 CDT" duration-ms="6265">
-      <class name="com.devtools.DemoTests">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.devtools.DemoTests@169e6180]" started-at="2023-05-18T00:42:05 CDT" name="beforeTest" finished-at="2023-05-18T00:42:05 CDT" duration-ms="19" status="PASS">
+    <test started-at="2024-02-21T23:57:54 CST" name="Smoke - Chrome" finished-at="2024-02-21T23:59:07 CST" duration-ms="72344">
+      <class name="com.advantage.bsn.Selenium_ContactUs">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_ContactUs@6574a52c]" started-at="2024-02-21T23:58:18 CST" name="setUpClass" finished-at="2024-02-21T23:58:29 CST" duration-ms="11375" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="dockerTest()[pri:0, instance:com.devtools.DemoTests@169e6180]" started-at="2023-05-18T00:42:05 CDT" name="dockerTest" finished-at="2023-05-18T00:42:11 CDT" duration-ms="5984" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: headless chrome=113.0.5672.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LSTKMY232078', ip: '169.254.27.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: true, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\JOSE~1.GAL\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:9222}, goog:loggingPrefs: {browser: ALL, driver: ALL, performance: ALL}, javascriptEnabled: true, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: false, pageLoadStrategy: normal, platform: ANY, platformName: ANY, proxy: Proxy(), se:cdp: ws://169.254.27.140:4444/se..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, version: , webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 070c6cdef8ae1e3d359a85e66b9ac946]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: headless chrome=113.0.5672.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LSTKMY232078', ip: '169.254.27.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: true, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\JOSE~1.GAL\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:9222}, goog:loggingPrefs: {browser: ALL, driver: ALL, performance: ALL}, javascriptEnabled: true, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: false, pageLoadStrategy: normal, platform: ANY, platformName: ANY, proxy: Proxy(), se:cdp: ws://169.254.27.140:4444/se..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, version: , webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 070c6cdef8ae1e3d359a85e66b9ac946
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
-at com.devtools.DemoTests.dockerTest(DemoTests.java:221)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testContactUs()[pri:0, instance:com.advantage.bsn.Selenium_ContactUs@6574a52c]" started-at="2024-02-21T23:58:29 CST" name="testContactUs" description="Contact Us - Happy Path" finished-at="2024-02-21T23:58:46 CST" duration-ms="17237" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dockerTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.devtools.DemoTests@169e6180]" started-at="2023-05-18T00:42:11 CDT" name="afterTest" finished-at="2023-05-18T00:42:12 CDT" duration-ms="227" status="PASS">
+        </test-method> <!-- testContactUs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_ContactUs@6574a52c]" started-at="2024-02-21T23:58:46 CST" name="tearDown" finished-at="2024-02-21T23:58:47 CST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.devtools.DemoTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.advantage.bsn.Selenium_ContactUs -->
+      <class name="com.advantage.bsn.Selenium_ChatWithUs">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_ChatWithUs@6c1a5b54]" started-at="2024-02-21T23:58:47 CST" name="setUpClass" finished-at="2024-02-21T23:58:59 CST" duration-ms="12560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="chatWithUs()[pri:0, instance:com.advantage.bsn.Selenium_ChatWithUs@6c1a5b54]" started-at="2024-02-21T23:58:59 CST" name="chatWithUs" description="Chat With US - Happy path " finished-at="2024-02-21T23:59:07 CST" duration-ms="7502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatWithUs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_ChatWithUs@6c1a5b54]" started-at="2024-02-21T23:59:07 CST" name="tearDown" finished-at="2024-02-21T23:59:07 CST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.advantage.bsn.Selenium_ChatWithUs -->
+      <class name="com.advantage.bsn.Selenium_CreateAccount">
+        <test-method is-config="true" signature="SetupEnv(org.testng.ITestContext)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:57:54 CST" name="SetupEnv" finished-at="2024-02-21T23:57:54 CST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64d4f7c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupEnv -->
+        <test-method is-config="true" signature="SetupTestSuite(java.lang.String,java.lang.String)[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:57:54 CST" name="SetupTestSuite" finished-at="2024-02-21T23:57:54 CST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupTestSuite -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:57:54 CST" name="setUpClass" finished-at="2024-02-21T23:57:59 CST" duration-ms="4844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testGotoUrl()[pri:5, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:57:59 CST" name="testGotoUrl" description="Goto URL" finished-at="2024-02-21T23:58:10 CST" duration-ms="10370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGotoUrl -->
+        <test-method signature="testCreateAccount()[pri:10, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:58:10 CST" name="testCreateAccount" description="Create Account" finished-at="2024-02-21T23:58:17 CST" duration-ms="7682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:58:17 CST" name="tearDown" finished-at="2024-02-21T23:58:18 CST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.advantage.bsn.Selenium_CreateAccount@4b45a2f5]" started-at="2024-02-21T23:59:07 CST" name="afterSuite" finished-at="2024-02-21T23:59:07 CST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.advantage.bsn.Selenium_CreateAccount -->
+    </test> <!-- Smoke - Chrome -->
+  </suite> <!-- Advantange Shopping Regression Suite -->
 </testng-results>

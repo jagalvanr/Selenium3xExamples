@@ -4,20 +4,31 @@
   <listeners>
     <listener class-name="com.fmk.listeners.ExtentTestNGIReporterListener"/>
   </listeners>
-  <test thread-count="5" name="Smoke - MySQL(failed)">
-    <parameter name="hostname" value="localhost"/>
-    <parameter name="database" value="maldonado_fox_03"/>
-    <parameter name="userdb" value="root"/>
-    <parameter name="password" value="we238185$MSL"/>
-    <parameter name="port" value="3306"/>
-    <parameter name="query" value="select usuario,nombre from usuarios;"/>
+  <test thread-count="5" name="Smoke - Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="remotePort" value="4444"/>
     <classes>
-      <class name="com.db.mysql.ConnectionManager_MySql">
+      <class name="com.advantage.bsn.Selenium_CreateAccount">
         <methods>
-          <include name="login"/>
-          <include name="setupConnection"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="testGotoUrl"/>
+          <include name="testCreateAccount"/>
+          <include name="SetupEnv"/>
+          <include name="SetupTestSuite"/>
         </methods>
-      </class> <!-- com.db.mysql.ConnectionManager_MySql -->
+      </class> <!-- com.advantage.bsn.Selenium_CreateAccount -->
+      <class name="com.advantage.bsn.Selenium_ContactUs">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="testContactUs"/>
+          <include name="setUpClass"/>
+          <include name="SetupEnv"/>
+          <include name="SetupTestSuite"/>
+        </methods>
+      </class> <!-- com.advantage.bsn.Selenium_ContactUs -->
     </classes>
-  </test> <!-- Smoke - MySQL(failed) -->
+  </test> <!-- Smoke - Chrome(failed) -->
 </suite> <!-- Failed suite [Advantange Shopping Regression Suite] -->

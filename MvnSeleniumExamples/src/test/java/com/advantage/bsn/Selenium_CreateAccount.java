@@ -35,9 +35,10 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 		     driver.get(baseUrl);
 		     SyncPageToLoad();
 //
-		     getLogEntries();
+//		     getLogEntries();
 //		     
-		     waitForElementPresent(By.id("menuUser"), 30);
+		     Thread.sleep(5000);
+		     waitForElementPresent(By.id("menuUser"), 5);
 		     //waitForElement.until(ExpectedConditions.invisibilityOfElementLocated (By.id("menuUser")));
 		    //waitForElement.until(ExpectedConditions.elementToBeClickable (By.id("menuUser")));
 		     WebElement element = driver.findElement(By.id("menuUser"));
@@ -134,7 +135,7 @@ public class Selenium_CreateAccount extends TSD_BaseClassDrivers {
 		driver.findElement(By.name("postal_codeRegisterPage")).clear();
 		driver.findElement(By.name("postal_codeRegisterPage")).sendKeys("66350");
 		driver.findElement(By.name("i_agree")).click();
-		driver.findElement(By.id("register_btnundefined")).click();
+		driver.findElement(By.id("register_btn")).click();
 		//Thread.sleep(5000);
 		//driver.findElement(By.id("menuUser")).click();
 		//driver.findElement(By.xpath("//div[@id='loginMiniTitle']/label[3]")).click();
