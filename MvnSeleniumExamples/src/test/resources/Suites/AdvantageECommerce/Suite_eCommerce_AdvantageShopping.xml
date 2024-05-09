@@ -6,8 +6,6 @@
  	</listeners>
 	
   <test verbose="2" name="Smoke - Chrome">
-    <parameter name="browser" value="chrome"></parameter>
-    <parameter name="remotePort" value="4444"></parameter>
     <classes>
        	<class name="com.advantage.bsn.Selenium_CreateAccount"/>
       	<class name="com.advantage.bsn.Selenium_ContactUs"/>
